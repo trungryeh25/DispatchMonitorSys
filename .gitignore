@@ -1,0 +1,77 @@
+# Node modules & managers
+node_modules/
+.npm
+.pnpm
+.yarn
+.next/
+
+# Build output
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyd
+
+# Flask
+instance/
+*.db
+*.sqlite3
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+postgres_data/
+
+# Prisma
+prisma/migrations/
+
+# Virtual environments
+venv/
+ENV/
+env/
+dismo/
+.venv/
+
+# IDE & editors
+.vscode
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage & test
+coverage/
+
+# Others
+*.tgz
+*.local
+*.bak
+*.old
+
+# ML models
+*.pt
+*.h5
+*.ckpt
+
+# Media files
+*.mp4

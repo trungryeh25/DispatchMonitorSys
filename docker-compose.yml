@@ -1,0 +1,52 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:5000
+      
+    image: myapp-frontend:latest
+    container_name: myapp-frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://localhost:5000
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: myapp-backend:latest
+    container_name: myapp-backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./server:/app
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    container_name: myapp-db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=myappdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

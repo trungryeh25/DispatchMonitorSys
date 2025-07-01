@@ -1,0 +1,7 @@
+train: /content/drive/MyDrive/TestExam-preInterview/AU/Dataset/Detection/train
+val: /content/drive/MyDrive/TestExam-preInterview/AU/Dataset/Detection/val
+
+nc: 2
+names:
+  0: dish
+  1: tray

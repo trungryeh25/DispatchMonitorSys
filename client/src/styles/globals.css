@@ -1,0 +1,62 @@
+/* Import Tailwind layers */
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Reset CSS mặc định của browser */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Đảm bảo mọi phần tử đều dùng box-sizing border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Option: custom selection color */
+::selection {
+  background-color: #3399ff;
+  color: white;
+}
+
+/* Option: thêm transition cho toàn bộ layout nếu cần */
+body {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Option: set default link style nếu muốn */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes border-draw {
+  0% {
+    border-color: transparent;
+    border-width: 0;
+  }
+  25% {
+    border-left-color: white;
+    border-width: 2px;
+  }
+  50% {
+    border-top-color: white;
+  }
+  75% {
+    border-right-color: white;
+  }
+  100% {
+    border-bottom-color: white;
+  }
+}
+
+.animate-border-draw {
+  animation: border-draw 1s linear forwards;
+}

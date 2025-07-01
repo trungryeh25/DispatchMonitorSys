@@ -1,0 +1,26 @@
+[
+    {
+        "id": "6e544bd0-7803-4ca3-bdc7-05e1f298baca",
+        "image_id": "http://localhost:5000/static/predicted.jpg",
+        "object_id": 1,
+        "correct_label": "kakigori"
+    },
+    {
+        "id": "64ff6a26-7697-4c97-9b91-7e1430838e46",
+        "image_id": "http://localhost:5000/static/predicted.jpg",
+        "object_id": 1,
+        "correct_label": "kakigori"
+    },
+    {
+        "id": "e48f7760-8761-45df-8fbf-d38651dcdb0f",
+        "image_id": "http://localhost:5000/static/predicted.jpg",
+        "object_id": 1,
+        "correct_label": "invalid"
+    },
+    {
+        "id": "82a994fc-c63c-4e60-b1ed-b1fa9d60f8ae",
+        "image_id": "http://localhost:5000/static/predicted_7f16413bc13b4b8ba22f603fd7cb7249.jpg",
+        "object_id": 1,
+        "correct_label": "invalid"
+    }
+]
