@@ -66,8 +66,8 @@ area using YOLO (You Only Look Once), combined with a feedback mechanism. It is 
 ### 2️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/trungryeh25/DispatchMonitorSys.git
+cd DispatchMonitorSys
 ```
 
 ---
