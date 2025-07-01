@@ -1,7 +1,7 @@
+# Dispatch Monitor System — Image Upload & Feedback System
 
-# 🖼️ MyApp — Image Upload & Feedback System
-
-This project is an image upload and prediction system using YOLO (You Only Look Once), combined with a feedback mechanism. It is designed to be deployed seamlessly using Docker Compose.
+This project is an intelligent monitoring system for a commercial kitchen’s dispatch
+area using YOLO (You Only Look Once), combined with a feedback mechanism. It is designed to be deployed seamlessly using Docker Compose.
 
 ---
 
@@ -36,10 +36,23 @@ This project is an image upload and prediction system using YOLO (You Only Look 
 │   ├── main.py
 │   ├── models/
 │   └── ...
+├── DispatchMonitor/          # trained model
+│   ├── train_classification_wResnet.ipynb
+│   ├── train_detection_wYolov5.ipynb
+│
 ├── docker-compose.yml
 ├── README.md
 ```
+
 ---
+
+## 🏋️‍♂️ Training model
+
+- **Detection (Object Detection) by YOLOv5**  
+  👉 [Train detection notebook (YOLOv5)](https://github.com/trungryeh25/DispatchMonitorSys/blob/main/DispatchMonitor/train_detection_wYolov5.ipynb)
+
+- **Classification label by ResNet**  
+  👉 [Train classification notebook (ResNet)](https://github.com/trungryeh25/DispatchMonitorSys/blob/main/DispatchMonitor/train_classification_wResnet.ipynb)
 
 ## 💻 Installation & Usage
 
