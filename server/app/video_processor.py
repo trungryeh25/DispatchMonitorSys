@@ -17,7 +17,7 @@ def process_video(input_path, output_path, log_path):
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(output_path, fourcc, fps, (w, h))
 
-    # Nếu file log tồn tại trước đó, xóa để tránh ghi đè
+    # if the log file already exists, delete it to avoid overwriting.
     if os.path.exists(log_path):
         os.remove(log_path)
 
@@ -55,7 +55,7 @@ def process_video(input_path, output_path, log_path):
 
         out.write(frame)
 
-        # 🟢 Ghi log realtime mỗi frame
+        # log data in real time on a per-frame basis
         with open(log_path, 'w') as f:
             json.dump(log, f, indent=4)
 
